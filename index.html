@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Countdown Timer with Alert</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Countdown Timer</h1>
+
+    <div class="timer-card">
+      <label for="secondsInput">Enter seconds</label>
+      <input
+        type="number"
+        id="secondsInput"
+        min="1"
+        placeholder="e.g. 60"
+      />
+
+      <button id="startBtn">Start</button>
+
+      <div class="display" id="display">00:00</div>
+      <p class="status" id="statusText"></p>
+    </div>
+
+    <!-- Simple audio beep; replace src with your own file if you want -->
+    <audio id="beepAudio">
+      <source src="beep.wav" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
